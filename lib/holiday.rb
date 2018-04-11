@@ -82,6 +82,7 @@ def all_supplies_in_holidays(holiday_hash)
       if holidays.include?("_")
         holiday1s = holidays.gsub("_", " ")
         holidays = holiday1s.titelize
+        binding.pry
       end
       #supplies = holiday_hash[season][holiday]
       #supplies2 = supplies.values
