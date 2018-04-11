@@ -80,7 +80,7 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |holiday, item|
       holidays = holiday.to_s.capitalize
       if holidays.include?("_")
-        holiday1s = holidays.gsub("_", " ")
+        holidays = holidays.gsub("_", " ")
         #holidays = holiday1s.titelize
       end
       #supplies = holiday_hash[season][holiday]
