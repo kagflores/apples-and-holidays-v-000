@@ -88,8 +88,8 @@ def all_supplies_in_holidays(holiday_hash)
       items = holiday_hash[season][holiday]
       items2 = items.join(", ")
       puts "  #{holidays}: #{items2}"
-binding.pry
     end
+    binding.pry
   end
 end
 
